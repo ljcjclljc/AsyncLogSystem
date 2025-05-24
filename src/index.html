@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>异步日志存储系统</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3f37c9;
+            --accent-color: #4895ef;
+            --dark-color: #1b263b;
+            --light-color: #f8f9fa;
+            --success-color: #4cc9f0;
+            --warning-color: #f8961e;
+            --danger-color: #f94144;
+            --background: #f5f7fb;
+            --card-bg: #ffffff;
+            --text-primary: #2b2d42;
+            --text-secondary: #6c757d;
+            --border-radius: 12px;
+            --box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 2.5rem;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -0.05rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .upload-section {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            box-shadow: var(--box-shadow);
+            margin-bottom: 3rem;
+            transition: var(--transition);
+        }
+
+        .upload-section:hover {
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--dark-color);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .section-title i {
+            color: var(--accent-color);
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.8rem;
+            color: var(--text-primary);
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .file-upload-wrapper {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        .file-upload-label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #d1d5db;
+            border-radius: var(--border-radius);
+            padding: 3rem 2rem;
+            background-color: rgba(239, 246, 255, 0.5);
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .file-upload-label:hover {
+            border-color: var(--accent-color);
+            background-color: rgba(239, 246, 255, 0.8);
+        }
+
+        .file-upload-label i {
+            font-size: 3rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .file-upload-label h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--dark-color);
+        }
+
+        .file-upload-label p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .file-upload-input {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .selected-file {
+            display: flex;
+            align-items: center;
+            background: var(--light-color);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .selected-file i {
+            margin-right: 0.8rem;
+            color: var(--success-color);
+        }
+
+        .selected-file-name {
+            font-weight: 500;
+            flex-grow: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .storage-type {
+            display: flex;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .storage-option {
+            flex: 1;
+        }
+
+        .storage-option input {
+            display: none;
+        }
+
+        .storage-option label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: var(--light-color);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+            height: 100%;
+            text-align: center;
+            border: 2px solid transparent;
+        }
+
+        .storage-option label:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .storage-option input:checked+label {
+            background: rgba(67, 97, 238, 0.1);
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .storage-option i {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .storage-option h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .storage-option p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .upload-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 1rem 2.5rem;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1.1rem;
+            font-weight: 500;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(67, 97, 238, 0.2);
+        }
+
+        .upload-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 7px 14px rgba(67, 97, 238, 0.3);
+        }
+
+        .upload-btn:active {
+            transform: translateY(0);
+        }
+
+        .upload-btn i {
+            margin-right: 0.8rem;
+        }
+
+        .file-list {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            box-shadow: var(--box-shadow);
+        }
+
+        .file-list-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+
+        .file-list-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--dark-color);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .refresh-btn {
+            background: var(--light-color);
+            color: var(--primary-color);
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .refresh-btn:hover {
+            background: #e9ecef;
+        }
+
+        .file-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+            transition: var(--transition);
+        }
+
+        .file-item:last-child {
+            border-bottom: none;
+        }
+
+        .file-item:hover {
+            background: rgba(239, 246, 255, 0.5);
+            border-radius: 8px;
+        }
+
+        .file-info {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .file-icon {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+        }
+
+        .file-details {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .file-name {
+            font-weight: 500;
+            margin-bottom: 0.3rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .file-meta {
+            display: flex;
+            gap: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .file-type {
+            background: var(--light-color);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        .file-actions {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .action-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1.1rem;
+            padding: 0.5rem;
+            border-radius: 50%;
+            width: 2.5rem;
+            height: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .action-btn:hover {
+            background: rgba(0, 0, 0, 0.05);
+            color: var(--primary-color);
+        }
+
+        .download-btn:hover {
+            color: var(--success-color);
+        }
+
+        .delete-btn:hover {
+            color: var(--danger-color);
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-secondary);
+        }
+
+        .empty-state i {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            color: #e9ecef;
+        }
+
+        .empty-state h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .upload-section, .file-list {
+                padding: 1.5rem;
+            }
+            
+            .storage-type {
+                flex-direction: column;
+            }
+            
+            .file-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+            
+            .file-actions {
+                align-self: flex-end;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <i class="fas fa-cloud-upload-alt"></i>
+            异步日志存储系统
+        </h1>
+
+        <div class="upload-section">
+            <h2 class="section-title">
+                <i class="fas fa-file-upload"></i>
+                上传日志文件
+            </h2>
+
+            <div class="form-group">
+                <label>选择日志文件</label>
+                <div class="file-upload-wrapper">
+                    <label class="file-upload-label" for="fileInput">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <h3>点击或拖拽文件到此处</h3>
+                        <p>支持单个文件上传，最大100MB</p>
+                    </label>
+                    <input type="file" id="fileInput" class="file-upload-input">
+                </div>
+                <div id="selectedFileContainer" style="display: none;">
+                    <div class="selected-file">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="selected-file-name" id="selectedFileName"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>存储类型</label>
+                <div class="storage-type">
+                    <div class="storage-option">
+                        <input type="radio" name="storageType" id="deepStorage" value="deep" checked>
+                        <label for="deepStorage">
+                            <i class="fas fa-database"></i>
+                            <h3>深度存储</h3>
+                            <p>高可靠性，适合长期保存</p>
+                        </label>
+                    </div>
+                    <div class="storage-option">
+                        <input type="radio" name="storageType" id="lowStorage" value="low">
+                        <label for="lowStorage">
+                            <i class="fas fa-hdd"></i>
+                            <h3>普通存储</h3>
+                            <p>经济实惠，适合临时文件</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <button class="upload-btn" onclick="uploadFile()">
+                <i class="fas fa-upload"></i>
+                开始上传
+            </button>
+        </div>
+
+        <div class="file-list">
+            <div class="file-list-header">
+                <h2 class="file-list-title">
+                    <i class="fas fa-file-alt"></i>
+                    我的日志文件
+                </h2>
+                <button class="refresh-btn" onclick="refreshFileList()">
+                    <i class="fas fa-sync-alt"></i>
+                    刷新
+                </button>
+            </div>
+
+            <!-- 文件列表动态插入点 -->
+            {{FILE_LIST}}
+            
+            <!-- 空状态示例 (当没有文件时显示) -->
+            <!--
+            <div class="empty-state">
+                <i class="fas fa-folder-open"></i>
+                <h3>暂无日志文件</h3>
+                <p>上传您的第一个日志文件开始使用</p>
+            </div>
+            -->
+        </div>
+    </div>
+
+    <script>
+        // 动态配置注入
+        const config = {
+            backendUrl: '{{BACKEND_URL}}'
+        };
+
+        // 文件选择处理
+        const fileInput = document.getElementById('fileInput');
+        const selectedFileContainer = document.getElementById('selectedFileContainer');
+        const selectedFileName = document.getElementById('selectedFileName');
+        
+        fileInput.addEventListener('change', function(e) {
+            if (this.files && this.files.length > 0) {
+                selectedFileName.textContent = this.files[0].name;
+                selectedFileContainer.style.display = 'block';
+            } else {
+                selectedFileContainer.style.display = 'none';
+            }
+        });
+        
+        // 拖放功能
+        const uploadLabel = document.querySelector('.file-upload-label');
+        
+        uploadLabel.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadLabel.style.borderColor = getComputedStyle(document.documentElement).getPropertyValue('--accent-color');
+            uploadLabel.style.backgroundColor = 'rgba(239, 246, 255, 0.8)';
+        });
+        
+        uploadLabel.addEventListener('dragleave', () => {
+            uploadLabel.style.borderColor = '#d1d5db';
+            uploadLabel.style.backgroundColor = 'rgba(239, 246, 255, 0.5)';
+        });
+        
+        uploadLabel.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadLabel.style.borderColor = '#d1d5db';
+            uploadLabel.style.backgroundColor = 'rgba(239, 246, 255, 0.5)';
+            
+            if (e.dataTransfer.files.length) {
+                fileInput.files = e.dataTransfer.files;
+                selectedFileName.textContent = e.dataTransfer.files[0].name;
+                selectedFileContainer.style.display = 'block';
+            }
+        });
+
+        async function uploadFile() {
+            const file = fileInput.files[0];
+            const storageType = document.querySelector('input[name="storageType"]:checked').value;
+
+            if (!file) {
+                showAlert('请先选择文件', 'warning');
+                return;
+            }
+
+            // 检查文件大小 (示例设置为100MB限制)
+            if (file.size > 100 * 1024 * 1024) {
+                showAlert('文件大小不能超过100MB', 'error');
+                return;
+            }
+
+            // Base64 编码
+            const encodedFilename = btoa(unescape(encodeURIComponent(file.name)));
+            console.log("Base64 编码结果:", encodedFilename);
+
+            try {
+                // 显示上传状态
+                const uploadBtn = document.querySelector('.upload-btn');
+                const originalText = uploadBtn.innerHTML;
+                uploadBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 上传中...';
+                uploadBtn.disabled = true;
+
+                const response = await fetch(`${config.backendUrl}/upload`, {
+                    method: 'POST',
+                    headers: {
+                        'StorageType': storageType,
+                        'FileName': encodedFilename
+                    },
+                    body: file
+                });
+
+                if (response.ok) {
+                    showAlert('文件上传成功', 'success');
+                    setTimeout(() => location.reload(), 1500);
+                } else {
+                    const errorData = await response.json();
+                    showAlert(`上传失败: ${errorData.message || response.status}`, 'error');
+                }
+            } catch (error) {
+                console.error('上传错误:', error);
+                showAlert('网络连接失败', 'error');
+            } finally {
+                const uploadBtn = document.querySelector('.upload-btn');
+                uploadBtn.innerHTML = originalText;
+                uploadBtn.disabled = false;
+            }
+        }
+
+        function downloadFile(fileId) {
+            // 显示下载状态
+            const downloadBtn = document.querySelector(`.download-btn[data-id="${fileId}"]`);
+            if (downloadBtn) {
+                const originalHtml = downloadBtn.innerHTML;
+                downloadBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                
+                setTimeout(() => {
+                    window.location = `${config.backendUrl}/download?id=${fileId}`;
+                    downloadBtn.innerHTML = originalHtml;
+                }, 500);
+            } else {
+                window.location = `${config.backendUrl}/download?id=${fileId}`;
+            }
+        }
+
+        function refreshFileList() {
+            const refreshBtn = document.querySelector('.refresh-btn');
+            const originalHtml = refreshBtn.innerHTML;
+            refreshBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 刷新中...';
+            
+            setTimeout(() => {
+                location.reload();
+                refreshBtn.innerHTML = originalHtml;
+            }, 800);
+        }
+
+        function showAlert(message, type) {
+            // 这里可以添加更美观的提示通知系统
+            alert(message); // 暂时使用简单alert
+        }
+    </script>
+</body>
+
+</html>
