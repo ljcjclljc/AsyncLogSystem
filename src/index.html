@@ -615,7 +615,9 @@
                     method: 'POST',
                     headers: {
                         'StorageType': storageType,
-                        'FileName': encodedFilename
+                        'FileName': encodedFilename,
+                        'Connection': 'keep-alive'
+
                     },
                     body: file
                 });
