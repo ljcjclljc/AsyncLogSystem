@@ -12,24 +12,48 @@ AsyncLogSystem 是一个基于异步日志系统的储存系统，它允许用�
 
 ## 三、项目结构
 ```
-AsyncLogSystem/
-├── log/
-│   ├── AsyncBuffer.h
-│   ├── AsyncLogger.h
-│   ├── AsyncWorker.h
-│   ├── backlog/
-│   │   ├── ServerBackupLog.cpp
-│   │   └── ServerBackupLog.h
-│   └── Util.h
-├── src/
-│   ├── Config.h
-│   ├── Service.h
-│   ├── index1.html
-│   └── text.cpp
-└── README.md
+AsyncLogSystem-main/
+├── README.md                    # 项目说明文档
+├── log/                         # 日志系统模块
+│   ├── AsyncBuffer.h            # 异步缓冲区
+│   ├── AsyncLogger.h            # 异步日志器
+│   ├── AsyncWorker.h            # 异步工作线程
+│   ├── Level.h                  # 日志级别定义
+│   ├── LogFlush.h               # 日志刷新器
+│   ├── Manager.h                # 日志管理器
+│   ├── Message.h                # 日志消息
+│   ├── Mylog.h                  # 日志接口
+│   ├── Threadpool.h             # 线程池
+│   ├── Util.h                   # 工具函数
+│   ├── backlog/                 # 备份日志相关
+│   └── config.conf              # 日志配置文件
+└── src/                         # 主程序模块
+    ├── CMakeLists.txt           # CMake 配置文件
+    ├── AsioIOServicePool.cpp    # Asio IO 服务池
+    ├── CServer.cpp              # 服务器实现
+    ├── HttpConnection.cpp       # HTTP 连接处理
+    ├── LogicSystem.cpp          # 业务逻辑处理
+    ├── Service.cpp              # 服务实现
+    ├── base64.cpp               # Base64 编码解码
+    ├── build/                   # 编译输出目录
+    ├── include/                 # 头文件
+    ├── index.html               # Web 界面
+    ├── index1.html              # 备用 Web 界面
+    ├── resource/                # 资源文件
+    └── test.cpp                 # 测试程序
 ```
 
 ## 四、安装与配置
+### 1. 依赖项
+- CMake 3.10 及以上
+- C++17 兼容编译器
+- Boost 1.71.0 库 (system, filesystem, thread)
+- libevent 库
+- JsonCpp 库
+- bundle 库
+- base64 库
+- pthread 库
+- g++ 编译器
 ### 1. 克隆项目
 ```bash
 git clone https://github.com/ljcjclljc/AsyncLogSystem.git
@@ -51,15 +75,17 @@ cd AsyncLogSystem
 ```
 
 ### 3. 编译项目
-由于没有提供具体的编译脚本，假设使用 g++ 进行编译：
-```bash
-g++ src/*.cpp -o AsyncLogSystem -levhttp -levent -lboost_system -lboost_thread -lpthread
+cd build文件夹下使用
+```
+cmake .. #生成对应的makefile文件
+make     #编译项目
+./test   #运行项目
 ```
 
 ## 五、使用方法
 ### 1. 启动服务器
 ```bash
-./AsyncLogSystem
+./test
 ```
 
 ### 2. 访问 Web 界面
@@ -71,47 +97,8 @@ g++ src/*.cpp -o AsyncLogSystem -levhttp -levent -lboost_system -lboost_thread -
 ### 4. 下载文件
 在文件列表中，点击文件对应的“下载”按钮，即可下载文件。
 
-## 六、代码示例
-### 1. 启动服务模块
-```cpp
-#include "Service.h"
-
-void service_module()
-{
-    storage::Service s;
-    mylog::GetLogger("asynclogger")->Info("service step in RunModule");
-    s.RunModule();
-}
-
-int main()
-{
-    service_module();
-    return 0;
-}
-```
-
-### 2. 异步日志记录
-```cpp
-#include "AsyncLogger.h"
-
-int main()
-{
-    std::vector<mylog::LogFlush::ptr> flushs;
-    mylog::LoggerBuilder builder;
-    builder.BuildLoggerName("asynclogger");
-    builder.BuildLopperType(mylog::AsyncType::ASYNC_SAFE);
-    builder.BuildLoggerFlush<mylog::StdoutFlush>();
-    mylog::AsyncLogger::ptr logger = builder.Build();
-
-    logger->Info(__FILE__, __LINE__, "This is an info log message");
-    logger->Error(__FILE__, __LINE__, "This is an error log message");
-
-    return 0;
-}
-```
-
-## 七、贡献与反馈
+## 六、贡献与反馈
 如果你对该项目有任何建议或发现了问题，请在 GitHub 上提交 Issue 或 Pull Request。
 
-## 八、许可证
+## 七、许可证
 本项目遵循 [MIT 许可证](https://opensource.org/licenses/MIT)。

@@ -2,11 +2,11 @@
 #include "Manager.h"
 namespace mylog {
 // 用户获取日志器
-AsyncLogger::ptr GetLogger(const std::string &name) {
+inline AsyncLogger::ptr GetLogger(const std::string &name) {
     return LoggerManager::GetInstance().GetLogger(name);
 }
 // 用户获取默认日志器
-AsyncLogger::ptr DefaultLogger() { return LoggerManager::GetInstance().DefaultLogger(); }
+inline AsyncLogger::ptr DefaultLogger() { return LoggerManager::GetInstance().DefaultLogger(); }
 
 // 简化用户使用，宏函数默认填上文件吗+行号
 #define Debug(fmt, ...) Debug(__FILE__, __LINE__, fmt, ##__VA_ARGS__)

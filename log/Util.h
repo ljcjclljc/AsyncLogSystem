@@ -134,7 +134,8 @@ namespace mylog
                 JsonData(){
                     std::string content;
                     Util::File file;
-                    std::string file_path="/home/ubuntu/桌面/AsynLogSystem/log/config.conf";
+                    // 修改为绝对路径
+                    std::string file_path="/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/log/config.conf";
                     if(file.GetContent(content,file_path)==false)
                     {
                         std::cout<<"读取配置文件失败"<<std::endl;
