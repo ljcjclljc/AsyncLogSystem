@@ -213,9 +213,13 @@ namespace storage
             std::regex("\\{\\{FILE_LIST\\}\\}"),
             generateModernFileList(files));
 
+        // 修复BACKEND_URL替换逻辑
+        std::string backend_url = "http://" + storage::Config::GetInstance()->GetServerIp() + ":" + 
+            std::to_string(storage::Config::GetInstance()->GetServerPort());
+            std::cout<<"ListShow:backend_url:"<<backend_url<<std::endl;
         templatecontent = std::regex_replace(templatecontent,
             std::regex("\\{\\{BACKEND_URL\\}\\}"),
-           "http://"+storage::Config::GetInstance()->GetServerIp()+":"+std::to_string(storage::Config::GetInstance()->GetServerPort()));
+            backend_url);
 
         conn->_response.result(http::status::ok);
         conn->_response.set(http::field::content_type, "text/html;charset=utf-8");

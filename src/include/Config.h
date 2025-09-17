@@ -9,7 +9,7 @@
 
 namespace storage{
     //配置文件
-    const std::string Config_File = "src/resource/Storage.conf";
+    const std::string Config_File = "/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/resource/Storage.conf";
 
     class Config : boost::noncopyable{
         public:
@@ -51,7 +51,14 @@ namespace storage{
             deep_storage_dir_ = root["deep_storage_dir"].asString();
             low_storage_dir_ = root["low_storage_dir"].asString();
             bundle_format_ = root["bundle_format"].asInt();
-            
+            // std::cout << "Config::GetInstance3" << std::endl;
+            // std::cout << "server_port_:" << server_port_ << std::endl;
+            // std::cout << "server_ip:" << server_ip << std::endl;
+            // std::cout << "download_prefix_:" << download_prefix_ << std::endl;
+            // std::cout << "storage_info_:" << storage_info_ << std::endl;
+            // std::cout << "deep_storage_dir_:" << deep_storage_dir_ << std::endl;
+            // std::cout << "low_storage_dir_:" << low_storage_dir_ << std::endl;
+            // std::cout << "bundle_format_:" << bundle_format_ << std::endl;
             return true;
         }
 

@@ -24,7 +24,8 @@ void CServer::start()
 			self->start();
 		}
 		catch (std::exception& exp) {
-
+			std::cerr << "Exception in connection handling: " << exp.what() << std::endl;
+			self->start();
 		}
 		});
 }

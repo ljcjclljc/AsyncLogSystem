@@ -10,8 +10,13 @@ void HttpConnection::Start()
 	auto self = shared_from_this();
 	http::async_read(_socket, _buffer, _request, [self](beast::error_code ec, std::size_t bytes_transfered) {
 		try {
+			if(ec)
+			{
+				std::cout << "async_read error is " << ec.message() << std::endl;
+				return;
+			}
 			//输出请求
-			//std::cout << "request is " <<self-> _request << std::endl;
+			std::cout << "request is " <<self-> _request << std::endl;
 			//error_code重载了==可以用于判断返回bool类型数
 			boost::ignore_unused(bytes_transfered);
 			self->HandleReq();
@@ -194,7 +199,7 @@ void HttpConnection::HandleReq()
 
 	if (_request.method() == http::verb::get) {
 		PreParseGetParam();
-		//std::cout << "get url is " << std::string(_request.target()) << std::endl;
+		std::cout << "get url is " << std::string(_request.target()) << std::endl;
 		if(std::string(_request.target()).find("/download/")!=std::string::npos){
 		bool success = LogicSystem::GetInstance()->HandleGet("/download/", shared_from_this());
 		if (!success) {
@@ -206,6 +211,7 @@ void HttpConnection::HandleReq()
 		}
 		}else
 		{
+			std::cout<<"get url is "<<std::string(_request.target())<<std::endl;
 		bool success = LogicSystem::GetInstance()->HandleGet(std::string(_request.target()), shared_from_this());
 		if (!success) {
 			_response.result(http::status::not_found);
@@ -225,7 +231,7 @@ void HttpConnection::HandleReq()
 
 	if (_request.method() == http::verb::post) {
 		PreParseGetParam();
-		//std::cout << "post url is " << std::string(_request.target()) << std::endl;
+		std::cout << "post url is " << std::string(_request.target()) << std::endl;
 		bool success = LogicSystem::GetInstance()->HandlePost(std::string(_request.target()), shared_from_this());
 		if (!success) {
 			_response.result(http::status::not_found);
@@ -235,8 +241,7 @@ void HttpConnection::HandleReq()
 			return;
 		}
 		// 处理POST请求
-
-		_response.result(http::status::bad_request);
+		_response.result(http::status::ok);
         _response.set(http::field::content_type, "text/plain");
 		WriteResponse();
 		return;

@@ -1,0 +1,41 @@
+[11:28:58][138875160340288][INFO][asynclogger:49]	DataManager construct start
+[11:28:58][138875160340288][INFO][asynclogger:33]	ReadConfig start
+[11:28:58][138875160340288][INFO][asynclogger:62]	init datamanager
+[11:28:58][138875160340288][INFO][asynclogger:65]	there is no storage file info need to load
+[11:28:58][138875160340288][INFO][asynclogger:53]	DataManager construct end
+[11:29:24][138874981119744][INFO][asynclogger:193]	ListShow
+[11:29:25][138874981119744][INFO][asynclogger:196]	ListShow:files.size:0
+[11:29:26][138874981119744][INFO][asynclogger:229]	ListShow:success
+[12:00:19][138874972727040][INFO][asynclogger:193]	ListShow
+[12:00:19][138874972727040][INFO][asynclogger:196]	ListShow:files.size:0
+[12:00:19][138874972727040][INFO][asynclogger:229]	ListShow:success
+[12:00:30][138874981119744][INFO][asynclogger:21]	Upload
+[12:00:31][138874981119744][INFO][asynclogger:31]	Upload:len:611718
+[12:00:31][138874981119744][INFO][asynclogger:155]	SetContent: ofs
+[12:00:31][138874981119744][ERROR][asynclogger:100]	Upload:fu.SetContent error
+[12:01:07][138874981119744][INFO][asynclogger:193]	ListShow
+[12:01:08][138874981119744][INFO][asynclogger:196]	ListShow:files.size:0
+[12:01:08][138874981119744][INFO][asynclogger:229]	ListShow:success
+[12:01:38][138874981119744][INFO][asynclogger:21]	Upload
+[12:01:38][138874981119744][INFO][asynclogger:31]	Upload:len:611718
+[12:01:38][138874981119744][INFO][asynclogger:109]	Upload:fu.SetContent success
+[12:01:38][138874981119744][INFO][asynclogger:18]	NewStorageInfo start
+[12:01:39][138874981119744][INFO][asynclogger:33]	download_url:/download/简历4.pdf,mtime_:Wed Sep 17 12:01:38 2025
+,atime_:Wed Sep 17 12:01:38 2025
+,fsize_:611718
+[12:01:39][138874981119744][INFO][asynclogger:34]	NewStorageInfo end
+[12:01:39][138874981119744][INFO][asynclogger:130]	data_message Insert start
+[12:01:40][138874981119744][INFO][asynclogger:93]	message storage start
+[12:01:41][138874981119744][INFO][asynclogger:115]	new message for StorageInfo:
+[12:01:41][138874981119744][INFO][asynclogger:263]	Serialize: ss.str
+[12:01:42][138874981119744][INFO][asynclogger:124]	message storage end
+[12:01:42][138874981119744][INFO][asynclogger:139]	data_message Insert end
+[12:01:43][138874981119744][INFO][asynclogger:138]	Upload:success
+[12:01:46][138874972727040][INFO][asynclogger:193]	ListShow
+[12:01:47][138874972727040][INFO][asynclogger:196]	ListShow:files.size:1
+[12:01:47][138874972727040][INFO][asynclogger:229]	ListShow:success
+[12:01:49][138874972727040][INFO][asynclogger:245]	Download
+[12:01:52][138874972727040][INFO][asynclogger:250]	Download:resource_path:/download/简历4.pdf
+[12:01:52][138874972727040][INFO][asynclogger:264]	Download:download_path:./low_storage/简历4.pdf
+[12:01:53][138874972727040][INFO][asynclogger:355]	Download:retrans success
+[12:01:54][138874972727040][INFO][asynclogger:364]	Download:success

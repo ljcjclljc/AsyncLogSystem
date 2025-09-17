@@ -1,0 +1,8 @@
+[11:18:41][129541924394816][INFO][asynclogger:49]	DataManager construct start
+[11:18:41][129541924394816][INFO][asynclogger:33]	ReadConfig start
+[11:18:41][129541924394816][INFO][asynclogger:62]	init datamanager
+[11:18:41][129541924394816][INFO][asynclogger:65]	there is no storage file info need to load
+[11:18:41][129541924394816][INFO][asynclogger:53]	DataManager construct end
+[11:18:55][129541744555776][INFO][asynclogger:193]	ListShow
+[11:18:55][129541744555776][INFO][asynclogger:196]	ListShow:files.size:0
+[11:18:56][129541744555776][INFO][asynclogger:229]	ListShow:success
