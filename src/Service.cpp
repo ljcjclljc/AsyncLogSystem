@@ -346,24 +346,26 @@ namespace storage
         }
         close(fd);
 
-        beast::ostream(conn->_response.body()).write(buffer.data(), bytes_read);
-
+        // 设置响应头部信息
         conn->_response.set(http::field::accept_ranges, "bytes");
         conn->_response.set(http::field::etag, GetETag(info));
         conn->_response.set(http::field::content_type, "application/octet-stream");
+        // 不要手动设置content_length，让prepare_payload()自动处理
+        
+        // 写入文件内容到响应体
+        beast::ostream(conn->_response.body()).write(buffer.data(), bytes_read);
+        
+        // 准备响应载荷
         conn->_response.prepare_payload();
-        mylog::GetLogger("asynclogger")->Info("Download:retrans success");
-        //conn->_response.content_length(buffer.size());
-        if(retrans)
-        {
-            conn->_response.result(http::status::ok);
-        }
-        else
-        {
-            conn->_response.result(http::status::partial_content);
-            mylog::GetLogger("asynclogger")->Info("Download:success");
-        }
+        
+        // 设置正确的响应状态码
+        conn->_response.result(http::status::ok);
+        mylog::GetLogger("asynclogger")->Info("Download:success, bytes_read=%ld", bytes_read);
+
+        
+
         conn->WriteResponse();
+
 
         if(download_path!=info.storage_path_)
         {

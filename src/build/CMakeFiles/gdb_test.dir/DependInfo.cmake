@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/AsioIOServicePool.cpp" "/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles/gdb_test.dir/AsioIOServicePool.cpp.o"
-  "/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/CServer.cpp" "/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles/gdb_test.dir/CServer.cpp.o"
-  "/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/HttpConnection.cpp" "/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles/gdb_test.dir/HttpConnection.cpp.o"
-  "/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/LogicSystem.cpp" "/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles/gdb_test.dir/LogicSystem.cpp.o"
-  "/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/Service.cpp" "/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles/gdb_test.dir/Service.cpp.o"
-  "/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/base64.cpp" "/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles/gdb_test.dir/base64.cpp.o"
-  "/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/test.cpp" "/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles/gdb_test.dir/test.cpp.o"
+  "/mnt/g/C++/AsyncLogSystem/src/AsioIOServicePool.cpp" "/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/gdb_test.dir/AsioIOServicePool.cpp.o"
+  "/mnt/g/C++/AsyncLogSystem/src/CServer.cpp" "/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/gdb_test.dir/CServer.cpp.o"
+  "/mnt/g/C++/AsyncLogSystem/src/HttpConnection.cpp" "/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/gdb_test.dir/HttpConnection.cpp.o"
+  "/mnt/g/C++/AsyncLogSystem/src/LogicSystem.cpp" "/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/gdb_test.dir/LogicSystem.cpp.o"
+  "/mnt/g/C++/AsyncLogSystem/src/Service.cpp" "/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/gdb_test.dir/Service.cpp.o"
+  "/mnt/g/C++/AsyncLogSystem/src/base64.cpp" "/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/gdb_test.dir/base64.cpp.o"
+  "/mnt/g/C++/AsyncLogSystem/src/test.cpp" "/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/gdb_test.dir/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

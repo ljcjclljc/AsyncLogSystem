@@ -1,0 +1,18 @@
+[19:01:40][133166397781824][INFO][asynclogger:49]	DataManager construct start
+[19:01:40][133166397781824][INFO][asynclogger:33]	ReadConfig start
+[19:01:40][133166397781824][INFO][asynclogger:62]	init datamanager
+[19:01:41][133166397781824][INFO][asynclogger:130]	data_message Insert start
+[19:01:42][133166397781824][INFO][asynclogger:93]	message storage start
+[19:01:43][133166397781824][INFO][asynclogger:115]	new message for StorageInfo:
+[19:01:43][133166397781824][INFO][asynclogger:263]	Serialize: ss.str
+[19:01:43][133166397781824][INFO][asynclogger:124]	message storage end
+[19:01:43][133166397781824][INFO][asynclogger:139]	data_message Insert end
+[19:01:44][133166397781824][INFO][asynclogger:53]	DataManager construct end
+[19:01:49][133166218802944][INFO][asynclogger:193]	ListShow
+[19:01:50][133166218802944][INFO][asynclogger:196]	ListShow:files.size:1
+[19:01:52][133166218802944][INFO][asynclogger:229]	ListShow:success
+[19:01:56][133166210410240][INFO][asynclogger:245]	Download
+[19:01:56][133166210410240][INFO][asynclogger:250]	Download:resource_path:/download/global.h
+[19:01:57][133166210410240][INFO][asynclogger:264]	Download:download_path:./low_storage/global.h
+[19:01:57][133166210410240][INFO][asynclogger:355]	Download:retrans success
+[19:01:58][133166210410240][INFO][asynclogger:365]	Download:success

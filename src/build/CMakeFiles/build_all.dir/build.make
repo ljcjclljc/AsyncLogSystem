@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src
+CMAKE_SOURCE_DIR = /mnt/g/C++/AsyncLogSystem/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build
+CMAKE_BINARY_DIR = /mnt/g/C++/AsyncLogSystem/src/build
 
 # Utility rule file for build_all.
 
@@ -72,6 +72,6 @@ CMakeFiles/build_all.dir/clean:
 .PHONY : CMakeFiles/build_all.dir/clean
 
 CMakeFiles/build_all.dir/depend:
-	cd /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles/build_all.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/g/C++/AsyncLogSystem/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/g/C++/AsyncLogSystem/src /mnt/g/C++/AsyncLogSystem/src /mnt/g/C++/AsyncLogSystem/src/build /mnt/g/C++/AsyncLogSystem/src/build /mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/build_all.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/build_all.dir/depend
 

@@ -1,0 +1,34 @@
+[17:48:33][124509683304256][INFO][asynclogger:49]	DataManager construct start
+[17:48:34][124509683304256][INFO][asynclogger:33]	ReadConfig start
+[17:48:35][124509683304256][INFO][asynclogger:62]	init datamanager
+[17:48:36][124509683304256][INFO][asynclogger:65]	there is no storage file info need to load
+[17:48:36][124509683304256][INFO][asynclogger:53]	DataManager construct end
+[17:48:39][124509504124672][INFO][asynclogger:193]	ListShow
+[17:48:40][124509504124672][INFO][asynclogger:196]	ListShow:files.size:0
+[17:48:42][124509504124672][INFO][asynclogger:229]	ListShow:success
+[17:48:53][124509424187136][INFO][asynclogger:21]	Upload
+[17:48:53][124509424187136][INFO][asynclogger:31]	Upload:len:1611
+[17:48:56][124509424187136][INFO][asynclogger:109]	Upload:fu.SetContent success
+[17:48:57][124509424187136][INFO][asynclogger:18]	NewStorageInfo start
+[17:48:57][124509424187136][INFO][asynclogger:33]	download_url:/download/global.h,mtime_:Wed Sep 17 17:48:56 2025
+,atime_:Wed Sep 17 17:48:56 2025
+,fsize_:1611
+[17:48:59][124509424187136][INFO][asynclogger:34]	NewStorageInfo end
+[17:48:59][124509424187136][INFO][asynclogger:130]	data_message Insert start
+[17:49:00][124509424187136][INFO][asynclogger:93]	message storage start
+[17:49:00][124509424187136][INFO][asynclogger:115]	new message for StorageInfo:
+[17:49:01][124509424187136][INFO][asynclogger:263]	Serialize: ss.str
+[17:49:01][124509424187136][INFO][asynclogger:124]	message storage end
+[17:49:02][124509424187136][INFO][asynclogger:139]	data_message Insert end
+[17:49:02][124509424187136][INFO][asynclogger:138]	Upload:success
+[17:49:05][124509504124672][INFO][asynclogger:193]	ListShow
+[17:49:05][124509424187136][INFO][asynclogger:193]	ListShow
+[17:49:05][124509504124672][INFO][asynclogger:196]	ListShow:files.size:1
+[17:49:05][124509424187136][INFO][asynclogger:196]	ListShow:files.size:1
+[17:49:05][124509424187136][INFO][asynclogger:229]	ListShow:success
+[17:49:05][124509504124672][INFO][asynclogger:229]	ListShow:success
+[17:49:07][124509424187136][INFO][asynclogger:245]	Download
+[17:49:08][124509424187136][INFO][asynclogger:250]	Download:resource_path:/download/global.h
+[17:49:08][124509424187136][INFO][asynclogger:264]	Download:download_path:./low_storage/global.h
+[17:49:08][124509424187136][INFO][asynclogger:355]	Download:retrans success
+[17:49:08][124509424187136][INFO][asynclogger:364]	Download:success

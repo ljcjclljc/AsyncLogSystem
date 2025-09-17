@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src
+CMAKE_SOURCE_DIR = /mnt/g/C++/AsyncLogSystem/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build
+CMAKE_BINARY_DIR = /mnt/g/C++/AsyncLogSystem/src/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/gdb_test.dir/depend.make
@@ -59,94 +59,94 @@ include CMakeFiles/gdb_test.dir/flags.make
 
 CMakeFiles/gdb_test.dir/AsioIOServicePool.cpp.o: CMakeFiles/gdb_test.dir/flags.make
 CMakeFiles/gdb_test.dir/AsioIOServicePool.cpp.o: ../AsioIOServicePool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gdb_test.dir/AsioIOServicePool.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gdb_test.dir/AsioIOServicePool.cpp.o -c /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/AsioIOServicePool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gdb_test.dir/AsioIOServicePool.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gdb_test.dir/AsioIOServicePool.cpp.o -c /mnt/g/C++/AsyncLogSystem/src/AsioIOServicePool.cpp
 
 CMakeFiles/gdb_test.dir/AsioIOServicePool.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gdb_test.dir/AsioIOServicePool.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/AsioIOServicePool.cpp > CMakeFiles/gdb_test.dir/AsioIOServicePool.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/g/C++/AsyncLogSystem/src/AsioIOServicePool.cpp > CMakeFiles/gdb_test.dir/AsioIOServicePool.cpp.i
 
 CMakeFiles/gdb_test.dir/AsioIOServicePool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gdb_test.dir/AsioIOServicePool.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/AsioIOServicePool.cpp -o CMakeFiles/gdb_test.dir/AsioIOServicePool.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/g/C++/AsyncLogSystem/src/AsioIOServicePool.cpp -o CMakeFiles/gdb_test.dir/AsioIOServicePool.cpp.s
 
 CMakeFiles/gdb_test.dir/CServer.cpp.o: CMakeFiles/gdb_test.dir/flags.make
 CMakeFiles/gdb_test.dir/CServer.cpp.o: ../CServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gdb_test.dir/CServer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gdb_test.dir/CServer.cpp.o -c /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/CServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gdb_test.dir/CServer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gdb_test.dir/CServer.cpp.o -c /mnt/g/C++/AsyncLogSystem/src/CServer.cpp
 
 CMakeFiles/gdb_test.dir/CServer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gdb_test.dir/CServer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/CServer.cpp > CMakeFiles/gdb_test.dir/CServer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/g/C++/AsyncLogSystem/src/CServer.cpp > CMakeFiles/gdb_test.dir/CServer.cpp.i
 
 CMakeFiles/gdb_test.dir/CServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gdb_test.dir/CServer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/CServer.cpp -o CMakeFiles/gdb_test.dir/CServer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/g/C++/AsyncLogSystem/src/CServer.cpp -o CMakeFiles/gdb_test.dir/CServer.cpp.s
 
 CMakeFiles/gdb_test.dir/HttpConnection.cpp.o: CMakeFiles/gdb_test.dir/flags.make
 CMakeFiles/gdb_test.dir/HttpConnection.cpp.o: ../HttpConnection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gdb_test.dir/HttpConnection.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gdb_test.dir/HttpConnection.cpp.o -c /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/HttpConnection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gdb_test.dir/HttpConnection.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gdb_test.dir/HttpConnection.cpp.o -c /mnt/g/C++/AsyncLogSystem/src/HttpConnection.cpp
 
 CMakeFiles/gdb_test.dir/HttpConnection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gdb_test.dir/HttpConnection.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/HttpConnection.cpp > CMakeFiles/gdb_test.dir/HttpConnection.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/g/C++/AsyncLogSystem/src/HttpConnection.cpp > CMakeFiles/gdb_test.dir/HttpConnection.cpp.i
 
 CMakeFiles/gdb_test.dir/HttpConnection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gdb_test.dir/HttpConnection.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/HttpConnection.cpp -o CMakeFiles/gdb_test.dir/HttpConnection.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/g/C++/AsyncLogSystem/src/HttpConnection.cpp -o CMakeFiles/gdb_test.dir/HttpConnection.cpp.s
 
 CMakeFiles/gdb_test.dir/LogicSystem.cpp.o: CMakeFiles/gdb_test.dir/flags.make
 CMakeFiles/gdb_test.dir/LogicSystem.cpp.o: ../LogicSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gdb_test.dir/LogicSystem.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gdb_test.dir/LogicSystem.cpp.o -c /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/LogicSystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gdb_test.dir/LogicSystem.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gdb_test.dir/LogicSystem.cpp.o -c /mnt/g/C++/AsyncLogSystem/src/LogicSystem.cpp
 
 CMakeFiles/gdb_test.dir/LogicSystem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gdb_test.dir/LogicSystem.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/LogicSystem.cpp > CMakeFiles/gdb_test.dir/LogicSystem.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/g/C++/AsyncLogSystem/src/LogicSystem.cpp > CMakeFiles/gdb_test.dir/LogicSystem.cpp.i
 
 CMakeFiles/gdb_test.dir/LogicSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gdb_test.dir/LogicSystem.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/LogicSystem.cpp -o CMakeFiles/gdb_test.dir/LogicSystem.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/g/C++/AsyncLogSystem/src/LogicSystem.cpp -o CMakeFiles/gdb_test.dir/LogicSystem.cpp.s
 
 CMakeFiles/gdb_test.dir/Service.cpp.o: CMakeFiles/gdb_test.dir/flags.make
 CMakeFiles/gdb_test.dir/Service.cpp.o: ../Service.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gdb_test.dir/Service.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gdb_test.dir/Service.cpp.o -c /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/Service.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gdb_test.dir/Service.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gdb_test.dir/Service.cpp.o -c /mnt/g/C++/AsyncLogSystem/src/Service.cpp
 
 CMakeFiles/gdb_test.dir/Service.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gdb_test.dir/Service.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/Service.cpp > CMakeFiles/gdb_test.dir/Service.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/g/C++/AsyncLogSystem/src/Service.cpp > CMakeFiles/gdb_test.dir/Service.cpp.i
 
 CMakeFiles/gdb_test.dir/Service.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gdb_test.dir/Service.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/Service.cpp -o CMakeFiles/gdb_test.dir/Service.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/g/C++/AsyncLogSystem/src/Service.cpp -o CMakeFiles/gdb_test.dir/Service.cpp.s
 
 CMakeFiles/gdb_test.dir/base64.cpp.o: CMakeFiles/gdb_test.dir/flags.make
 CMakeFiles/gdb_test.dir/base64.cpp.o: ../base64.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gdb_test.dir/base64.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gdb_test.dir/base64.cpp.o -c /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/base64.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gdb_test.dir/base64.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gdb_test.dir/base64.cpp.o -c /mnt/g/C++/AsyncLogSystem/src/base64.cpp
 
 CMakeFiles/gdb_test.dir/base64.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gdb_test.dir/base64.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/base64.cpp > CMakeFiles/gdb_test.dir/base64.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/g/C++/AsyncLogSystem/src/base64.cpp > CMakeFiles/gdb_test.dir/base64.cpp.i
 
 CMakeFiles/gdb_test.dir/base64.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gdb_test.dir/base64.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/base64.cpp -o CMakeFiles/gdb_test.dir/base64.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/g/C++/AsyncLogSystem/src/base64.cpp -o CMakeFiles/gdb_test.dir/base64.cpp.s
 
 CMakeFiles/gdb_test.dir/test.cpp.o: CMakeFiles/gdb_test.dir/flags.make
 CMakeFiles/gdb_test.dir/test.cpp.o: ../test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gdb_test.dir/test.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gdb_test.dir/test.cpp.o -c /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gdb_test.dir/test.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gdb_test.dir/test.cpp.o -c /mnt/g/C++/AsyncLogSystem/src/test.cpp
 
 CMakeFiles/gdb_test.dir/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gdb_test.dir/test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/test.cpp > CMakeFiles/gdb_test.dir/test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/g/C++/AsyncLogSystem/src/test.cpp > CMakeFiles/gdb_test.dir/test.cpp.i
 
 CMakeFiles/gdb_test.dir/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gdb_test.dir/test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/test.cpp -o CMakeFiles/gdb_test.dir/test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/g/C++/AsyncLogSystem/src/test.cpp -o CMakeFiles/gdb_test.dir/test.cpp.s
 
 # Object files for target gdb_test
 gdb_test_OBJECTS = \
@@ -177,7 +177,7 @@ gdb_test: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
 gdb_test: /usr/lib/x86_64-linux-gnu/libjsoncpp.so
 gdb_test: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.71.0
 gdb_test: CMakeFiles/gdb_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable gdb_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable gdb_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gdb_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -190,6 +190,6 @@ CMakeFiles/gdb_test.dir/clean:
 .PHONY : CMakeFiles/gdb_test.dir/clean
 
 CMakeFiles/gdb_test.dir/depend:
-	cd /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles/gdb_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/g/C++/AsyncLogSystem/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/g/C++/AsyncLogSystem/src /mnt/g/C++/AsyncLogSystem/src /mnt/g/C++/AsyncLogSystem/src/build /mnt/g/C++/AsyncLogSystem/src/build /mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/gdb_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/gdb_test.dir/depend
 

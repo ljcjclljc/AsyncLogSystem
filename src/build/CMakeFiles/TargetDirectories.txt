@@ -1,6 +1,6 @@
-/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles/clean_objs.dir
-/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles/build_all.dir
-/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles/gdb_test.dir
-/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles/test.dir
+/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/rebuild_cache.dir
+/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/clean_objs.dir
+/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/build_all.dir
+/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/gdb_test.dir
+/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/edit_cache.dir
+/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/test.dir

@@ -6,5 +6,5 @@ CXX_FLAGS =   -g -Wno-register -D_GLIBCXX_USE_OPEN_MODE -DBOOST_BIND_GLOBAL_PLAC
 
 CXX_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK
 
-CXX_INCLUDES = -I/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/include -I/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/../log 
+CXX_INCLUDES = -I/mnt/g/C++/AsyncLogSystem/src/include -I/mnt/g/C++/AsyncLogSystem/src/../log 
 

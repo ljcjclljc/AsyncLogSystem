@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src
+CMAKE_SOURCE_DIR = /mnt/g/C++/AsyncLogSystem/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build
+CMAKE_BINARY_DIR = /mnt/g/C++/AsyncLogSystem/src/build
 
 # Utility rule file for clean_objs.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build
 include CMakeFiles/clean_objs.dir/progress.make
 
 CMakeFiles/clean_objs:
-	/usr/bin/cmake -E remove /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/*.o
+	/usr/bin/cmake -E remove /mnt/g/C++/AsyncLogSystem/src/build/*.o
 
 clean_objs: CMakeFiles/clean_objs
 clean_objs: CMakeFiles/clean_objs.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_objs.dir/clean:
 .PHONY : CMakeFiles/clean_objs.dir/clean
 
 CMakeFiles/clean_objs.dir/depend:
-	cd /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build /mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/build/CMakeFiles/clean_objs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/g/C++/AsyncLogSystem/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/g/C++/AsyncLogSystem/src /mnt/g/C++/AsyncLogSystem/src /mnt/g/C++/AsyncLogSystem/src/build /mnt/g/C++/AsyncLogSystem/src/build /mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/clean_objs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_objs.dir/depend
 

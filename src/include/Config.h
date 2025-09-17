@@ -9,7 +9,7 @@
 
 namespace storage{
     //配置文件
-    const std::string Config_File = "/mnt/c/Users/93915/Desktop/AsyncLogSystem-main/src/resource/Storage.conf";
+    const std::string Config_File = "/mnt/g/C++/AsyncLogSystem/src/resource/Storage.conf";
 
     class Config : boost::noncopyable{
         public:
