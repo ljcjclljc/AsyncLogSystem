@@ -208,6 +208,12 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 EVENT_LIBRARY:FILEPATH=/usr/local/lib/libevent.so
 
 //Path to a library.
+FASTCOMMON_LIBRARY:FILEPATH=/usr/lib/libfastcommon.so
+
+//Path to a library.
+FASTDFS_CLIENT_LIBRARY:FILEPATH=/usr/lib/libfdfsclient.so
+
+//Path to a library.
 JSONCPP_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libjsoncpp.so
 
 //The directory containing a CMake configuration file for boost_atomic.

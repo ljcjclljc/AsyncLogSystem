@@ -1,21 +1,21 @@
 Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_0e726/fast && /usr/bin/make -f CMakeFiles/cmTC_0e726.dir/build.make CMakeFiles/cmTC_0e726.dir/build
+Run Build Command(s):/usr/bin/make cmTC_7f054/fast && /usr/bin/make -f CMakeFiles/cmTC_7f054.dir/build.make CMakeFiles/cmTC_7f054.dir/build
 make[1]: Entering directory '/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_0e726.dir/src.cxx.o
-/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -std=gnu++17 -o CMakeFiles/cmTC_0e726.dir/src.cxx.o -c /mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_0e726
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e726.dir/link.txt --verbose=1
-/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_0e726.dir/src.cxx.o  -o cmTC_0e726 
-/usr/bin/ld: CMakeFiles/cmTC_0e726.dir/src.cxx.o: in function `main':
+Building CXX object CMakeFiles/cmTC_7f054.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -std=gnu++17 -o CMakeFiles/cmTC_7f054.dir/src.cxx.o -c /mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7f054
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f054.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_7f054.dir/src.cxx.o  -o cmTC_7f054 
+/usr/bin/ld: CMakeFiles/cmTC_7f054.dir/src.cxx.o: in function `main':
 src.cxx:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.cxx:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.cxx:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_0e726.dir/build.make:87: cmTC_0e726] Error 1
+make[1]: *** [CMakeFiles/cmTC_7f054.dir/build.make:87: cmTC_7f054] Error 1
 make[1]: Leaving directory '/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_0e726/fast] Error 2
+make: *** [Makefile:121: cmTC_7f054/fast] Error 2
 
 
 Source file was:
@@ -41,18 +41,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_23565/fast && /usr/bin/make -f CMakeFiles/cmTC_23565.dir/build.make CMakeFiles/cmTC_23565.dir/build
+Run Build Command(s):/usr/bin/make cmTC_d2aef/fast && /usr/bin/make -f CMakeFiles/cmTC_d2aef.dir/build.make CMakeFiles/cmTC_d2aef.dir/build
 make[1]: Entering directory '/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_23565.dir/CheckFunctionExists.cxx.o
-/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -std=gnu++17 -o CMakeFiles/cmTC_23565.dir/CheckFunctionExists.cxx.o -c /mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
-Linking CXX executable cmTC_23565
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23565.dir/link.txt --verbose=1
-/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_23565.dir/CheckFunctionExists.cxx.o  -o cmTC_23565  -lpthreads 
+Building CXX object CMakeFiles/cmTC_d2aef.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -std=gnu++17 -o CMakeFiles/cmTC_d2aef.dir/CheckFunctionExists.cxx.o -c /mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_d2aef
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2aef.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_d2aef.dir/CheckFunctionExists.cxx.o  -o cmTC_d2aef  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_23565.dir/build.make:87: cmTC_23565] Error 1
+make[1]: *** [CMakeFiles/cmTC_d2aef.dir/build.make:87: cmTC_d2aef] Error 1
 make[1]: Leaving directory '/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_23565/fast] Error 2
+make: *** [Makefile:121: cmTC_d2aef/fast] Error 2
 
 
 

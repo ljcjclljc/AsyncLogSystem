@@ -222,6 +222,36 @@ CServer.cpp.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/CServer.cpp.s
 .PHONY : CServer.cpp.s
 
+FastDFSClient.o: FastDFSClient.cpp.o
+
+.PHONY : FastDFSClient.o
+
+# target to build an object file
+FastDFSClient.cpp.o:
+	$(MAKE) -f CMakeFiles/gdb_test.dir/build.make CMakeFiles/gdb_test.dir/FastDFSClient.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/FastDFSClient.cpp.o
+.PHONY : FastDFSClient.cpp.o
+
+FastDFSClient.i: FastDFSClient.cpp.i
+
+.PHONY : FastDFSClient.i
+
+# target to preprocess a source file
+FastDFSClient.cpp.i:
+	$(MAKE) -f CMakeFiles/gdb_test.dir/build.make CMakeFiles/gdb_test.dir/FastDFSClient.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/FastDFSClient.cpp.i
+.PHONY : FastDFSClient.cpp.i
+
+FastDFSClient.s: FastDFSClient.cpp.s
+
+.PHONY : FastDFSClient.s
+
+# target to generate assembly for a file
+FastDFSClient.cpp.s:
+	$(MAKE) -f CMakeFiles/gdb_test.dir/build.make CMakeFiles/gdb_test.dir/FastDFSClient.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/FastDFSClient.cpp.s
+.PHONY : FastDFSClient.cpp.s
+
 HttpConnection.o: HttpConnection.cpp.o
 
 .PHONY : HttpConnection.o
@@ -342,6 +372,36 @@ base64.cpp.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/base64.cpp.s
 .PHONY : base64.cpp.s
 
+fastdfs_example.o: fastdfs_example.cpp.o
+
+.PHONY : fastdfs_example.o
+
+# target to build an object file
+fastdfs_example.cpp.o:
+	$(MAKE) -f CMakeFiles/gdb_test.dir/build.make CMakeFiles/gdb_test.dir/fastdfs_example.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/fastdfs_example.cpp.o
+.PHONY : fastdfs_example.cpp.o
+
+fastdfs_example.i: fastdfs_example.cpp.i
+
+.PHONY : fastdfs_example.i
+
+# target to preprocess a source file
+fastdfs_example.cpp.i:
+	$(MAKE) -f CMakeFiles/gdb_test.dir/build.make CMakeFiles/gdb_test.dir/fastdfs_example.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/fastdfs_example.cpp.i
+.PHONY : fastdfs_example.cpp.i
+
+fastdfs_example.s: fastdfs_example.cpp.s
+
+.PHONY : fastdfs_example.s
+
+# target to generate assembly for a file
+fastdfs_example.cpp.s:
+	$(MAKE) -f CMakeFiles/gdb_test.dir/build.make CMakeFiles/gdb_test.dir/fastdfs_example.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/fastdfs_example.cpp.s
+.PHONY : fastdfs_example.cpp.s
+
 test.o: test.cpp.o
 
 .PHONY : test.o
@@ -390,6 +450,9 @@ help:
 	@echo "... CServer.o"
 	@echo "... CServer.i"
 	@echo "... CServer.s"
+	@echo "... FastDFSClient.o"
+	@echo "... FastDFSClient.i"
+	@echo "... FastDFSClient.s"
 	@echo "... HttpConnection.o"
 	@echo "... HttpConnection.i"
 	@echo "... HttpConnection.s"
@@ -402,6 +465,9 @@ help:
 	@echo "... base64.o"
 	@echo "... base64.i"
 	@echo "... base64.s"
+	@echo "... fastdfs_example.o"
+	@echo "... fastdfs_example.i"
+	@echo "... fastdfs_example.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"

@@ -25,6 +25,14 @@ find_library(JSONCPP_LIBRARY jsoncpp)
 find_library(BUNDLE_LIBRARY bundle)
 find_library(EVENT_LIBRARY event)
 
+# 查找 FastDFS 相关库
+find_library(FASTDFS_CLIENT_LIBRARY fdfsclient)
+find_library(FASTCOMMON_LIBRARY fastcommon)
+
+# 添加 FastDFS 头文件目录
+include_directories(/usr/include/fastdfs)
+include_directories(/usr/include/fastcommon)
+
 # 添加头文件目录
 include_directories(include)
 include_directories(../log)
@@ -46,6 +54,8 @@ target_link_libraries(test
     ${EVENT_LIBRARY}
     ${Boost_LIBRARIES}
     ${JSONCPP_LIBRARY}
+    ${FASTDFS_CLIENT_LIBRARY}
+    ${FASTCOMMON_LIBRARY}
 )
 
 # 创建调试目标（排除 text.o）
@@ -62,6 +72,8 @@ target_link_libraries(gdb_test
     ${EVENT_LIBRARY}
     ${Boost_LIBRARIES}
     ${JSONCPP_LIBRARY}
+    ${FASTDFS_CLIENT_LIBRARY}
+    ${FASTCOMMON_LIBRARY}
 )
 
 # 设置默认目标

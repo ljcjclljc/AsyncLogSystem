@@ -83,9 +83,22 @@ CMakeFiles/test.dir/CServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/CServer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/g/C++/AsyncLogSystem/src/CServer.cpp -o CMakeFiles/test.dir/CServer.cpp.s
 
+CMakeFiles/test.dir/FastDFSClient.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/FastDFSClient.cpp.o: ../FastDFSClient.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/FastDFSClient.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/FastDFSClient.cpp.o -c /mnt/g/C++/AsyncLogSystem/src/FastDFSClient.cpp
+
+CMakeFiles/test.dir/FastDFSClient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/FastDFSClient.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/g/C++/AsyncLogSystem/src/FastDFSClient.cpp > CMakeFiles/test.dir/FastDFSClient.cpp.i
+
+CMakeFiles/test.dir/FastDFSClient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/FastDFSClient.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/g/C++/AsyncLogSystem/src/FastDFSClient.cpp -o CMakeFiles/test.dir/FastDFSClient.cpp.s
+
 CMakeFiles/test.dir/HttpConnection.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/HttpConnection.cpp.o: ../HttpConnection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/HttpConnection.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/HttpConnection.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/HttpConnection.cpp.o -c /mnt/g/C++/AsyncLogSystem/src/HttpConnection.cpp
 
 CMakeFiles/test.dir/HttpConnection.cpp.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/test.dir/HttpConnection.cpp.s: cmake_force
 
 CMakeFiles/test.dir/LogicSystem.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/LogicSystem.cpp.o: ../LogicSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/LogicSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/LogicSystem.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/LogicSystem.cpp.o -c /mnt/g/C++/AsyncLogSystem/src/LogicSystem.cpp
 
 CMakeFiles/test.dir/LogicSystem.cpp.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/test.dir/LogicSystem.cpp.s: cmake_force
 
 CMakeFiles/test.dir/Service.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/Service.cpp.o: ../Service.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/Service.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test.dir/Service.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/Service.cpp.o -c /mnt/g/C++/AsyncLogSystem/src/Service.cpp
 
 CMakeFiles/test.dir/Service.cpp.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/test.dir/Service.cpp.s: cmake_force
 
 CMakeFiles/test.dir/base64.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/base64.cpp.o: ../base64.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test.dir/base64.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test.dir/base64.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/base64.cpp.o -c /mnt/g/C++/AsyncLogSystem/src/base64.cpp
 
 CMakeFiles/test.dir/base64.cpp.i: cmake_force
@@ -135,9 +148,22 @@ CMakeFiles/test.dir/base64.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/base64.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/g/C++/AsyncLogSystem/src/base64.cpp -o CMakeFiles/test.dir/base64.cpp.s
 
+CMakeFiles/test.dir/fastdfs_example.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/fastdfs_example.cpp.o: ../fastdfs_example.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test.dir/fastdfs_example.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/fastdfs_example.cpp.o -c /mnt/g/C++/AsyncLogSystem/src/fastdfs_example.cpp
+
+CMakeFiles/test.dir/fastdfs_example.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/fastdfs_example.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/g/C++/AsyncLogSystem/src/fastdfs_example.cpp > CMakeFiles/test.dir/fastdfs_example.cpp.i
+
+CMakeFiles/test.dir/fastdfs_example.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/fastdfs_example.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/g/C++/AsyncLogSystem/src/fastdfs_example.cpp -o CMakeFiles/test.dir/fastdfs_example.cpp.s
+
 CMakeFiles/test.dir/test.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/test.cpp.o: ../test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test.dir/test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/test.dir/test.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/test.cpp.o -c /mnt/g/C++/AsyncLogSystem/src/test.cpp
 
 CMakeFiles/test.dir/test.cpp.i: cmake_force
@@ -152,10 +178,12 @@ CMakeFiles/test.dir/test.cpp.s: cmake_force
 test_OBJECTS = \
 "CMakeFiles/test.dir/AsioIOServicePool.cpp.o" \
 "CMakeFiles/test.dir/CServer.cpp.o" \
+"CMakeFiles/test.dir/FastDFSClient.cpp.o" \
 "CMakeFiles/test.dir/HttpConnection.cpp.o" \
 "CMakeFiles/test.dir/LogicSystem.cpp.o" \
 "CMakeFiles/test.dir/Service.cpp.o" \
 "CMakeFiles/test.dir/base64.cpp.o" \
+"CMakeFiles/test.dir/fastdfs_example.cpp.o" \
 "CMakeFiles/test.dir/test.cpp.o"
 
 # External object files for target test
@@ -163,10 +191,12 @@ test_EXTERNAL_OBJECTS =
 
 test: CMakeFiles/test.dir/AsioIOServicePool.cpp.o
 test: CMakeFiles/test.dir/CServer.cpp.o
+test: CMakeFiles/test.dir/FastDFSClient.cpp.o
 test: CMakeFiles/test.dir/HttpConnection.cpp.o
 test: CMakeFiles/test.dir/LogicSystem.cpp.o
 test: CMakeFiles/test.dir/Service.cpp.o
 test: CMakeFiles/test.dir/base64.cpp.o
+test: CMakeFiles/test.dir/fastdfs_example.cpp.o
 test: CMakeFiles/test.dir/test.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: /usr/local/lib/libbundle.so
@@ -175,9 +205,11 @@ test: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
 test: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
 test: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
 test: /usr/lib/x86_64-linux-gnu/libjsoncpp.so
+test: /usr/lib/libfdfsclient.so
+test: /usr/lib/libfastcommon.so
 test: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.71.0
 test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -13,6 +13,21 @@ CMakeFiles/gdb_test.dir/CServer.cpp.o: ../include/Singleton.h
 CMakeFiles/gdb_test.dir/CServer.cpp.o: ../include/const.h
 CMakeFiles/gdb_test.dir/CServer.cpp.o: ../CServer.cpp
 
+CMakeFiles/gdb_test.dir/FastDFSClient.cpp.o: ../FastDFSClient.cpp
+CMakeFiles/gdb_test.dir/FastDFSClient.cpp.o: ../include/FastDFSClient.h
+CMakeFiles/gdb_test.dir/FastDFSClient.cpp.o: /usr/include/fastdfs/client_func.h
+CMakeFiles/gdb_test.dir/FastDFSClient.cpp.o: /usr/include/fastdfs/client_global.h
+CMakeFiles/gdb_test.dir/FastDFSClient.cpp.o: /usr/include/fastdfs/fdfs_client.h
+CMakeFiles/gdb_test.dir/FastDFSClient.cpp.o: /usr/include/fastdfs/fdfs_define.h
+CMakeFiles/gdb_test.dir/FastDFSClient.cpp.o: /usr/include/fastdfs/fdfs_global.h
+CMakeFiles/gdb_test.dir/FastDFSClient.cpp.o: /usr/include/fastdfs/fdfs_server_id_func.h
+CMakeFiles/gdb_test.dir/FastDFSClient.cpp.o: /usr/include/fastdfs/fdfs_shared_func.h
+CMakeFiles/gdb_test.dir/FastDFSClient.cpp.o: /usr/include/fastdfs/storage_client.h
+CMakeFiles/gdb_test.dir/FastDFSClient.cpp.o: /usr/include/fastdfs/storage_client1.h
+CMakeFiles/gdb_test.dir/FastDFSClient.cpp.o: /usr/include/fastdfs/tracker_client.h
+CMakeFiles/gdb_test.dir/FastDFSClient.cpp.o: /usr/include/fastdfs/tracker_proto.h
+CMakeFiles/gdb_test.dir/FastDFSClient.cpp.o: /usr/include/fastdfs/tracker_types.h
+
 CMakeFiles/gdb_test.dir/HttpConnection.cpp.o: ../include/AsioIOServicePool.h
 CMakeFiles/gdb_test.dir/HttpConnection.cpp.o: ../include/HttpConnection.h
 CMakeFiles/gdb_test.dir/HttpConnection.cpp.o: ../include/LogicSystem.h
@@ -59,13 +74,32 @@ CMakeFiles/gdb_test.dir/Service.cpp.o: ../include/LogicSystem.h
 CMakeFiles/gdb_test.dir/Service.cpp.o: ../include/Service.h
 CMakeFiles/gdb_test.dir/Service.cpp.o: ../include/Singleton.h
 CMakeFiles/gdb_test.dir/Service.cpp.o: ../include/Util.h
-CMakeFiles/gdb_test.dir/Service.cpp.o: ../include/base64.h
 CMakeFiles/gdb_test.dir/Service.cpp.o: ../include/bundle.h
 CMakeFiles/gdb_test.dir/Service.cpp.o: ../include/const.h
 CMakeFiles/gdb_test.dir/Service.cpp.o: ../Service.cpp
+CMakeFiles/gdb_test.dir/Service.cpp.o: /usr/include/fastcommon/_os_define.h
+CMakeFiles/gdb_test.dir/Service.cpp.o: /usr/include/fastcommon/base64.h
+CMakeFiles/gdb_test.dir/Service.cpp.o: /usr/include/fastcommon/common_define.h
 
-CMakeFiles/gdb_test.dir/base64.cpp.o: ../include/base64.h
 CMakeFiles/gdb_test.dir/base64.cpp.o: ../base64.cpp
+CMakeFiles/gdb_test.dir/base64.cpp.o: /usr/include/fastcommon/_os_define.h
+CMakeFiles/gdb_test.dir/base64.cpp.o: /usr/include/fastcommon/base64.h
+CMakeFiles/gdb_test.dir/base64.cpp.o: /usr/include/fastcommon/common_define.h
+
+CMakeFiles/gdb_test.dir/fastdfs_example.cpp.o: ../fastdfs_example.cpp
+CMakeFiles/gdb_test.dir/fastdfs_example.cpp.o: ../include/FastDFSClient.h
+CMakeFiles/gdb_test.dir/fastdfs_example.cpp.o: /usr/include/fastdfs/client_func.h
+CMakeFiles/gdb_test.dir/fastdfs_example.cpp.o: /usr/include/fastdfs/client_global.h
+CMakeFiles/gdb_test.dir/fastdfs_example.cpp.o: /usr/include/fastdfs/fdfs_client.h
+CMakeFiles/gdb_test.dir/fastdfs_example.cpp.o: /usr/include/fastdfs/fdfs_define.h
+CMakeFiles/gdb_test.dir/fastdfs_example.cpp.o: /usr/include/fastdfs/fdfs_global.h
+CMakeFiles/gdb_test.dir/fastdfs_example.cpp.o: /usr/include/fastdfs/fdfs_server_id_func.h
+CMakeFiles/gdb_test.dir/fastdfs_example.cpp.o: /usr/include/fastdfs/fdfs_shared_func.h
+CMakeFiles/gdb_test.dir/fastdfs_example.cpp.o: /usr/include/fastdfs/storage_client.h
+CMakeFiles/gdb_test.dir/fastdfs_example.cpp.o: /usr/include/fastdfs/storage_client1.h
+CMakeFiles/gdb_test.dir/fastdfs_example.cpp.o: /usr/include/fastdfs/tracker_client.h
+CMakeFiles/gdb_test.dir/fastdfs_example.cpp.o: /usr/include/fastdfs/tracker_proto.h
+CMakeFiles/gdb_test.dir/fastdfs_example.cpp.o: /usr/include/fastdfs/tracker_types.h
 
 CMakeFiles/gdb_test.dir/test.cpp.o: ../../log/AsyncBuffer.h
 CMakeFiles/gdb_test.dir/test.cpp.o: ../../log/AsyncLogger.h
@@ -80,6 +114,7 @@ CMakeFiles/gdb_test.dir/test.cpp.o: ../include/AsioIOServicePool.h
 CMakeFiles/gdb_test.dir/test.cpp.o: ../include/CServer.h
 CMakeFiles/gdb_test.dir/test.cpp.o: ../include/Config.h
 CMakeFiles/gdb_test.dir/test.cpp.o: ../include/DataManager.h
+CMakeFiles/gdb_test.dir/test.cpp.o: ../include/FastDFSClient.h
 CMakeFiles/gdb_test.dir/test.cpp.o: ../include/LogicSystem.h
 CMakeFiles/gdb_test.dir/test.cpp.o: ../include/Service.h
 CMakeFiles/gdb_test.dir/test.cpp.o: ../include/Singleton.h
@@ -89,4 +124,16 @@ CMakeFiles/gdb_test.dir/test.cpp.o: ../include/bundle.h
 CMakeFiles/gdb_test.dir/test.cpp.o: ../include/const.h
 CMakeFiles/gdb_test.dir/test.cpp.o: ../include/test.h
 CMakeFiles/gdb_test.dir/test.cpp.o: ../test.cpp
+CMakeFiles/gdb_test.dir/test.cpp.o: /usr/include/fastdfs/client_func.h
+CMakeFiles/gdb_test.dir/test.cpp.o: /usr/include/fastdfs/client_global.h
+CMakeFiles/gdb_test.dir/test.cpp.o: /usr/include/fastdfs/fdfs_client.h
+CMakeFiles/gdb_test.dir/test.cpp.o: /usr/include/fastdfs/fdfs_define.h
+CMakeFiles/gdb_test.dir/test.cpp.o: /usr/include/fastdfs/fdfs_global.h
+CMakeFiles/gdb_test.dir/test.cpp.o: /usr/include/fastdfs/fdfs_server_id_func.h
+CMakeFiles/gdb_test.dir/test.cpp.o: /usr/include/fastdfs/fdfs_shared_func.h
+CMakeFiles/gdb_test.dir/test.cpp.o: /usr/include/fastdfs/storage_client.h
+CMakeFiles/gdb_test.dir/test.cpp.o: /usr/include/fastdfs/storage_client1.h
+CMakeFiles/gdb_test.dir/test.cpp.o: /usr/include/fastdfs/tracker_client.h
+CMakeFiles/gdb_test.dir/test.cpp.o: /usr/include/fastdfs/tracker_proto.h
+CMakeFiles/gdb_test.dir/test.cpp.o: /usr/include/fastdfs/tracker_types.h
 

@@ -11,7 +11,10 @@
 #include"LogicSystem.h"
 #include"CServer.h"
 #include"AsioIOServicePool.h"
-
+// #include"fastdfs_client.h"  // 注释掉系统的 fastdfs 头文件
+// #include"fastdfs_client.h"  // 重复的包含，已注释
+#include"FastDFSClient.h"   // 真实的 FastDFS 客户端（需要系统库）
+// #include"MockFastDFSClient.h"  // 使用模拟的 FastDFS 客户端（不需要系统库）
 using namespace std;
 
 namespace storage {
@@ -64,6 +67,17 @@ void log_system_module_init()
 }
 int main()
 {
+    // 创建 FastDFS 客户端
+    FastDFSClient client("/etc/fdfs/client.conf");
+    
+    // 初始化客户端
+    if (!client.initialize()) {
+        std::cerr << "初始化失败: " << client.getLastError() << std::endl;
+        return 1;  // 返回错误码
+    }
+    
+    std::cout << "FastDFS 客户端初始化成功" << std::endl;
+
     log_system_module_init();
     // test t;
     // t=test();

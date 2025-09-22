@@ -159,6 +159,21 @@ std::string base64_encode(unsigned char const* bytes_to_encode, size_t in_len, b
     return ret;
 }
 
+std::string base64_decode(std::string const& s, bool remove_linebreaks) {
+   return decode(s, remove_linebreaks);
+}
+
+std::string base64_encode(std::string const& s, bool url) {
+   return encode(s, url);
+}
+
+std::string base64_encode_pem (std::string const& s) {
+   return encode_pem(s);
+}
+
+std::string base64_encode_mime(std::string const& s) {
+   return encode_mime(s);
+}
 template <typename String>
 static std::string decode(String const& encoded_string, bool remove_linebreaks) {
  //
@@ -240,21 +255,7 @@ static std::string decode(String const& encoded_string, bool remove_linebreaks) 
     return ret;
 }
 
-std::string base64_decode(std::string const& s, bool remove_linebreaks) {
-   return decode(s, remove_linebreaks);
-}
 
-std::string base64_encode(std::string const& s, bool url) {
-   return encode(s, url);
-}
-
-std::string base64_encode_pem (std::string const& s) {
-   return encode_pem(s);
-}
-
-std::string base64_encode_mime(std::string const& s) {
-   return encode_mime(s);
-}
 
 #if __cplusplus >= 201703L
 //

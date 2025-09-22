@@ -6,10 +6,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/mnt/g/C++/AsyncLogSystem/src/AsioIOServicePool.cpp" "/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/test.dir/AsioIOServicePool.cpp.o"
   "/mnt/g/C++/AsyncLogSystem/src/CServer.cpp" "/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/test.dir/CServer.cpp.o"
+  "/mnt/g/C++/AsyncLogSystem/src/FastDFSClient.cpp" "/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/test.dir/FastDFSClient.cpp.o"
   "/mnt/g/C++/AsyncLogSystem/src/HttpConnection.cpp" "/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/test.dir/HttpConnection.cpp.o"
   "/mnt/g/C++/AsyncLogSystem/src/LogicSystem.cpp" "/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/test.dir/LogicSystem.cpp.o"
   "/mnt/g/C++/AsyncLogSystem/src/Service.cpp" "/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/test.dir/Service.cpp.o"
   "/mnt/g/C++/AsyncLogSystem/src/base64.cpp" "/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/test.dir/base64.cpp.o"
+  "/mnt/g/C++/AsyncLogSystem/src/fastdfs_example.cpp" "/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/test.dir/fastdfs_example.cpp.o"
   "/mnt/g/C++/AsyncLogSystem/src/test.cpp" "/mnt/g/C++/AsyncLogSystem/src/build/CMakeFiles/test.dir/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
@@ -25,6 +27,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/include/fastdfs"
+  "/usr/include/fastcommon"
   "../include"
   "../../log"
   )

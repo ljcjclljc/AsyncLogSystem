@@ -13,6 +13,21 @@ CMakeFiles/gdb_test.dir/CServer.cpp.o
  ../include/Singleton.h
  ../include/const.h
  /mnt/g/C++/AsyncLogSystem/src/CServer.cpp
+CMakeFiles/gdb_test.dir/FastDFSClient.cpp.o
+ /mnt/g/C++/AsyncLogSystem/src/FastDFSClient.cpp
+ /mnt/g/C++/AsyncLogSystem/src/include/FastDFSClient.h
+ /usr/include/fastdfs/client_func.h
+ /usr/include/fastdfs/client_global.h
+ /usr/include/fastdfs/fdfs_client.h
+ /usr/include/fastdfs/fdfs_define.h
+ /usr/include/fastdfs/fdfs_global.h
+ /usr/include/fastdfs/fdfs_server_id_func.h
+ /usr/include/fastdfs/fdfs_shared_func.h
+ /usr/include/fastdfs/storage_client.h
+ /usr/include/fastdfs/storage_client1.h
+ /usr/include/fastdfs/tracker_client.h
+ /usr/include/fastdfs/tracker_proto.h
+ /usr/include/fastdfs/tracker_types.h
 CMakeFiles/gdb_test.dir/HttpConnection.cpp.o
  ../include/AsioIOServicePool.h
  ../include/HttpConnection.h
@@ -60,13 +75,32 @@ CMakeFiles/gdb_test.dir/Service.cpp.o
  ../include/Service.h
  ../include/Singleton.h
  ../include/Util.h
- ../include/base64.h
  ../include/bundle.h
  ../include/const.h
  /mnt/g/C++/AsyncLogSystem/src/Service.cpp
+ /usr/include/fastcommon/_os_define.h
+ /usr/include/fastcommon/base64.h
+ /usr/include/fastcommon/common_define.h
 CMakeFiles/gdb_test.dir/base64.cpp.o
- ../include/base64.h
  /mnt/g/C++/AsyncLogSystem/src/base64.cpp
+ /usr/include/fastcommon/_os_define.h
+ /usr/include/fastcommon/base64.h
+ /usr/include/fastcommon/common_define.h
+CMakeFiles/gdb_test.dir/fastdfs_example.cpp.o
+ /mnt/g/C++/AsyncLogSystem/src/fastdfs_example.cpp
+ /mnt/g/C++/AsyncLogSystem/src/include/FastDFSClient.h
+ /usr/include/fastdfs/client_func.h
+ /usr/include/fastdfs/client_global.h
+ /usr/include/fastdfs/fdfs_client.h
+ /usr/include/fastdfs/fdfs_define.h
+ /usr/include/fastdfs/fdfs_global.h
+ /usr/include/fastdfs/fdfs_server_id_func.h
+ /usr/include/fastdfs/fdfs_shared_func.h
+ /usr/include/fastdfs/storage_client.h
+ /usr/include/fastdfs/storage_client1.h
+ /usr/include/fastdfs/tracker_client.h
+ /usr/include/fastdfs/tracker_proto.h
+ /usr/include/fastdfs/tracker_types.h
 CMakeFiles/gdb_test.dir/test.cpp.o
  ../../log/AsyncBuffer.h
  ../../log/AsyncLogger.h
@@ -81,6 +115,7 @@ CMakeFiles/gdb_test.dir/test.cpp.o
  ../include/CServer.h
  ../include/Config.h
  ../include/DataManager.h
+ ../include/FastDFSClient.h
  ../include/LogicSystem.h
  ../include/Service.h
  ../include/Singleton.h
@@ -90,3 +125,15 @@ CMakeFiles/gdb_test.dir/test.cpp.o
  ../include/const.h
  ../include/test.h
  /mnt/g/C++/AsyncLogSystem/src/test.cpp
+ /usr/include/fastdfs/client_func.h
+ /usr/include/fastdfs/client_global.h
+ /usr/include/fastdfs/fdfs_client.h
+ /usr/include/fastdfs/fdfs_define.h
+ /usr/include/fastdfs/fdfs_global.h
+ /usr/include/fastdfs/fdfs_server_id_func.h
+ /usr/include/fastdfs/fdfs_shared_func.h
+ /usr/include/fastdfs/storage_client.h
+ /usr/include/fastdfs/storage_client1.h
+ /usr/include/fastdfs/tracker_client.h
+ /usr/include/fastdfs/tracker_proto.h
+ /usr/include/fastdfs/tracker_types.h
